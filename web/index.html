@@ -55,5 +55,28 @@
       });
     });
   </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD9mV-Zd323cdaEo52uAU0z84t8xjI7W18",
+      authDomain: "flutter-currency-converter.firebaseapp.com",
+      projectId: "flutter-currency-converter",
+      storageBucket: "flutter-currency-converter.appspot.com",
+      messagingSenderId: "165598491241",
+      appId: "1:165598491241:web:884da9eade9ecb0cdde8f8",
+      measurementId: "G-QY5JFS1PMP"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
